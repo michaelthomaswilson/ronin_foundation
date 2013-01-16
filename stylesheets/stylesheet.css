@@ -3,22 +3,22 @@
 /*************************************************************************/
 @font-face {
   font-family: 'ZurichCondensed';
-  src: url("../fonts/1FD75C_0_0.eot") format("eot"), url("../fonts/1FD75C_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/1FD75C_0_0.woff") format("woff"), url("../fonts/1FD75C_0_0.ttf") format("truetype"), url("../fonts/1FD75C_0_0.svg#1FD75C_0_0") format("svg");
+  src: url("/assets/fonts/1FD75C_0_0.eot") format("eot"), url("/assets/fonts/1FD75C_0_0.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/1FD75C_0_0.woff") format("woff"), url("/assets/fonts/1FD75C_0_0.ttf") format("truetype"), url("/assets/fonts/1FD75C_0_0.svg#1FD75C_0_0") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ZurichCondensedLight';
-  src: url("../fonts/tt0296m_-webfont.eot") format("eot"), url("../fonts/tt0296m_-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/tt0296m_-webfont.woff") format("woff"), url("../fonts/tt0296m_-webfont.ttf") format("truetype"), url("../fonts/tt0296m_-webfont.svg#tt0296m_-webfont") format("svg");
+  src: url("/assets/fonts/tt0296m_-webfont.eot") format("eot"), url("/assets/fonts/tt0296m_-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/tt0296m_-webfont.woff") format("woff"), url("/assets/fonts/tt0296m_-webfont.ttf") format("truetype"), url("/assets/fonts/tt0296m_-webfont.svg#tt0296m_-webfont") format("svg");
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'AshRegular';
-  src: url("../fonts/ash-webfont.eot");
-  src: url("../fonts/ash-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ash-webfont.woff") format("woff"), url("../fonts/ash-webfont.ttf") format("truetype");
+  src: url("/assets/fonts/ash-webfont.eot");
+  src: url("/assets/fonts/ash-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ash-webfont.woff") format("woff"), url("/assets/fonts/ash-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -183,7 +183,7 @@ input.button {
   padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   /*border-left: 5px solid rgba(255,255,255,0);*/
-  background: url(../images/navBackground.png) repeat-y;
+  background: url(/assets/images/navBackground.png) repeat-y;
   text-align: right;
   text-decoration: none;
   /*margin: 0 0 15px 0;*/
@@ -201,7 +201,7 @@ input.button {
 /* line 190, ../sass/stylesheet.scss */
 #history {
   position: relative;
-  background: #0b0803 url("../images/bg_heavy.jpg") 50% 0 no-repeat fixed;
+  background: #0b0803 url("/assets/images/bg_heavy.jpg") 50% 0 no-repeat fixed;
   background-size: 100%;
   color: white;
   height: 100%;
@@ -257,7 +257,7 @@ input.button {
 
 /* line 232, ../sass/stylesheet.scss */
 #home {
-  background: black url("../images/background-home.jpg") 50% 0 no-repeat fixed;
+  background: black url("/assets/images/background-home.jpg") 50% 0 no-repeat fixed;
   background-size: 100%;
   color: white;
   margin: 0 auto;
@@ -284,7 +284,7 @@ input.button {
 
 /* line 258, ../sass/stylesheet.scss */
 #present {
-  background: url("../images/background-present-2.jpg") 50% 0 no-repeat fixed;
+  background: url("/assets/images/background-present-2.jpg") 50% 0 no-repeat fixed;
   background-size: 100%;
   color: white;
   margin: 0 auto;
@@ -356,7 +356,7 @@ input.button {
 
 /* line 318, ../sass/stylesheet.scss */
 #future {
-  background: white url("../images/background-future-2.jpg") 50% 0 no-repeat fixed;
+  background: white url("/assets/images/background-future-2.jpg") 50% 0 no-repeat fixed;
   background-size: 100%;
   height: 100%;
   min-height: 768px;
