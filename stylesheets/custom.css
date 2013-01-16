@@ -306,11 +306,32 @@ a:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 289, ../sass/custom.scss */
+  h1 {
+    font-size: 1.1em;
+    line-height: 1em;
+    letter-spacing: .05em;
+    margin-bottom: 10px;
+  }
+
+  /* line 296, ../sass/custom.scss */
+  h2 {
+    font-size: 1.15em;
+    line-height: 1em;
+  }
+
+  /* line 301, ../sass/custom.scss */
+  p {
+    font-size: 17px;
+    line-height: 1.3em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* line 308, ../sass/custom.scss */
   #history, #home, #present, #future {
     background-attachment: scroll;
   }
 
-  /* line 294, ../sass/custom.scss */
+  /* line 313, ../sass/custom.scss */
   #home .leftColumn, #home .rightColumn {
     margin-top: 30%;
   }

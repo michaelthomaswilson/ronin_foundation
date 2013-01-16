@@ -286,6 +286,25 @@ a:hover {color: #fff;}
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 
+	h1 {
+		font-size: 1.1em;
+		line-height: 1em;	
+		letter-spacing: .05em;
+		margin-bottom: 10px;
+	}
+		
+	h2 {
+		font-size: 1.15em;
+		line-height: 1em;	
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 1.3em;
+		-webkit-font-smoothing:antialiased;
+	}
+
+
 	#history, #home, #present, #future {
 		background-attachment: scroll;
 	}
