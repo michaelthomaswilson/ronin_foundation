@@ -173,6 +173,29 @@ a:hover {color: #fff;}
 	min-height: 768px;
 }
 
+#future {
+	background: #fff url('/assets/images/background-future-2.jpg') 50% 0 no-repeat fixed;
+	background-size: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+
+	h1 {
+		color: #C51213;
+	}
+
+	p {
+		color: #70757c;
+	}
+
+	.leftColumn, .rightColumn {
+		margin-top: 15%;
+	}
+	
+	.logo {opacity: 1; margin-bottom: 50px; width: 110px;}
+	
+}
+
 #history {
 	position: relative;
 	background: #0b0803 url('/assets/images/bg_heavy.jpg') 50% 0 no-repeat fixed;
@@ -265,6 +288,12 @@ and (max-device-width : 1024px) {
 
 	#history, #home, #present, #future {
 		background-attachment: scroll;
+	}
+
+	#home{
+		.leftColumn, .rightColumn {
+			margin-top: 30%;
+		}
 	}
 
 }

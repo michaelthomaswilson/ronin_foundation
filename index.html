@@ -8,7 +8,7 @@
 	<meta charset="utf-8" />
 
 	<!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>Ronin Motorworks</title>
 
@@ -26,13 +26,32 @@
 	<script src="assets/js/waypoints.min.js"></script>
 
 	<script type="text/javascript"> 
+
+  $(window).resize(function(){
+    matchWindow();
+  });
+
+  function matchWindow() {
+      var height = $(window).height();
+      if (height > 768) {
+          $('#history, #home, #present, #future').height(height);
+      }
+  }
+
+  function scrollToHome() {
+    var top = $('#home').offset().top;
+    $('html,body').animate({scrollTop: top}, 800, 'easeInOutSine');
+    return false;
+  }
   
   $(document).ready(function(){
+
+    matchWindow();
+    scrollToHome();
 
     // initialize nav scrolling 
 
     $('ul.navigation').localScroll({easing:'easeInOutSine'});
-    //$.scrollTo($('div#home'), 800, {easing:'easeInOutSine'} );
 
     $('#history').waypoint(function() {
       console.log("id: history");
@@ -143,7 +162,7 @@
       </div> <!-- row -->
     </div> <!--#home-->
     
-    <div id="present" class="slide" data-slide="3" data-stellar-background-ratio="0.8">
+    <div id="present" class="slide" data-slide="3">
       <div class="row">
         <div class="ten columns offset-by-two">
           <div class="row">
@@ -172,16 +191,21 @@
 	 </div> <!--#present-->
     
     <div id="future" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
-      <div class="leftColumn">
-        <img src="assets/images/roninLogoDark.png" class="logo" alt="ronin motorworks" />
-        <h1><span>THE</span> FUTURE</h1>
-        <p>Ronin Motorcycle Works and the final production version of the “Magpul Ronin” are here with Magpul for SHOT Show 2013 to show the culmination of the original design concept.  Additional information about Ronin availability as well as all technical information is available from Ronin Motorcycle Works staff, co-located with Magpul Industries in booth #10362.</p>
-        
-        <p>We’ll contact you with updates, availablity and news about the evolution of the Ronin.</p>
-        <h2><a href="mailto:info@roninmotorworks.com?subject=Request_for_information" >Request more information and updates<br> from Ronin Motorworks</a></h2>
-      </div>
-      <div class="rightColumn">
-      </div>
+      <div class="row">
+        <div class="ten columns offset-by-two">
+          <div class="row">
+            <div class="six columns leftColumn">
+              <img src="assets/images/roninLogoDark.png" class="logo" alt="ronin motorworks" />
+              <h1><span>THE</span> FUTURE</h1>
+              <p>Ronin Motorcycle Works and the final production version of the “Magpul Ronin” are here with Magpul for SHOT Show 2013 to show the culmination of the original design concept.  Additional information about Ronin availability as well as all technical information is available from Ronin Motorcycle Works staff, co-located with Magpul Industries in booth #10362.</p>
+              
+              <p>We’ll contact you with updates, availablity and news about the evolution of the Ronin.</p>
+              <h2><a href="mailto:info@roninmotorworks.com?subject=Request_for_information" >Request more information and updates<br> from Ronin Motorworks</a></h2>
+            </div>
+            <div class="rightColumn"></div>
+          </div><!-- row -->
+        </div><!-- ten columns -->
+      </div><!-- row -->
     </div> <!--#future-->
     
   </div><!-- #main -->
