@@ -22,108 +22,59 @@
   <script src="assets/js/jquery.easing.1.3.js"></script>
 	<script src="assets/js/jquery.fancybox.js"></script>
 
+  <script>
+    // setup fancybox
+    $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
+  </script>
+
 </head>
 <body>
-
-	<div role="main">
-    <ul class="navigation">
-    	<!-- <div id="selected"></div> -->
-        <li><span class="content"><a href="#history" title="the history"  data-slide="1">THE HISTORY</a></span></li>
-        <li><span class="content"><a class="selected" href="#home" title="home"  data-slide="2">HOME</a></span></li>
-        <li><span class="content"><a href="#present" title="the present"  data-slide="3">THE PRESENT</a></span></li>
-        <li><span class="content"><a href="#future" title="the future" data-slide="4">THE FUTURE</a></span></li>
-        <li></li>
-    </ul>
-    <div id="history" class="slide" data-slide="1" >
-      <img src="assets/images/47.png" class="mark" />
-      <div class="row">
-        <div class="ten columns offset-by-two">
-          <div class="seven columns leftColumn" data-stellar-ratio="0.7">
-            <img src="assets/images/logo_old.png" class="logo" alt="ronin motorworks" />
-            <h1><span>THE</span> HISTORY</h1>
-            <p>After Magpul unveiled the original experimental prototype in 2010, Denver-based Ronin Motorworks, a wholly independent business and legal entity, was formed to investigate the possibility of manufacturing a production version of the concept bike. Ronin Motorworks hired a staff of designers and engineers from the motorcycling industryand spent the next year and a half evaluating the initial Magpul design and reengineering every facet and component of the bike from scratch using the original prototype as inspiration.</p>
-
-            <p>In early 2012, design of the newmotorcycle was completed, and the bike was authorized for licensed sale under the Magpul name. At that time, the decision was made to move forward with a limited-production run using new Buell 1125 chassis that had been kept in inventory.</p>
-
-          </div>
-          <div class="five columns last rightColumn">
-            <a class="fancybox photo" rel="gallery2" href="/assets/images/large/history1.jpg">
-              <img src="/assets/images/history1.jpg" alt="" />
-            </a>
-            <a class="fancybox photo" rel="gallery2" href="/assets/images/large/history2.jpg">
-              <img src="/assets/images/history2.jpg" alt="" />
-            </a>
-            <a class="fancybox photo" rel="gallery2" href="/assets/images/large/history3.jpg">
-              <img src="/assets/images/history3.jpg" alt="" />
-            </a>
-            <a class="fancybox photo" rel="gallery2" href="/assets/images/large/history4.jpg">
-              <img src="/assets/images/history4.jpg" alt="" />
-            </a>
-          </div>
-        </div> <!-- columns -->
-      </div> <!-- row -->
-    </div> <!--#history-->
     
-    <div id="home" class="slide" data-slide="2">
-      <div class="row">
-        <div class="ten columns offset-by-two">
-          <div class="row">
-            <div class="three columns leftColumn">
-                <img class="logo" src="assets/images/roninLogo.png" alt="ronin motorworks" />
-            </div>
-            <div class="eight columns end rightColumn">
-              <h1><span>the</span> magpul ronin</h1>
-              <p>Ronin Motorworks is pleased to announce the official release of the “Magpul Ronin” in 2013. The original Magpul Ronin was an experimental concept motorcycle born of a Magpul Industries Corp. design exercise. Taken from the Japanese word for a samurai who no longer has a master, the name “Ronin” was chosen after the Buell Motorcycle Company ceased production and closed its doors in 2009. The model 1125R was selected due to its high level of performance and aesthetic potential, both of which were never fully realized in the motorcycle’s original form.</p>
-            </div>
+  <div id="future" class="slide" data-slide="4">
+    <div class="row">
+      <div class="two columns">
+        <img src="assets/images/roninLogoLight.png" class="logo" alt="ronin motorworks" />
+      </div>
+      <div class="six columns offset-by-one">
+        <h1><span>THE</span> MAGPUL RONIN</h1>
+            <h2>Ronin Motorworks is pleased to announce the official release of the “Magpul Ronin” in 2013. </h2>
+
+            <p>The original Magpul Ronin was an experimental concept motorcycle born of a Magpul Industries Corp. design exercise. Taken from the Japanese word for a samurai who no longer has a master, the name “Ronin” was chosen after the Buell Motorcycle Company ceased production and closed its doors in 2009. The model 1125R was selected due to its high level of performance and aesthetic potential, both of which were never fully realized in the motorcycle’s original form.</p>
+
+            <p>After Magpul unveiled the original experimental prototype in 2010, Denver-based Ronin Motorworks, a wholly independent business and legal entity, was formed to investigate the possibility of manufacturing a production version of the concept bike. Ronin Motorworks hired a staff of designers and engineers from the motorcycling industryand spent the next year and a half evaluating the initial Magpul design and reengineering every facet and component of the bike from scratch using the original prototype as inspiration. In early 2012, design of the newmotorcycle was completed, and the bike was authorized for licensed sale under the Magpul name. At that time, the decision was made to move forward with a limited-production run using new Buell 1125 chassis that had been kept in inventory.</p>           
+
+            <p>Limited to a production run of 47 Ronin motorcycles, each hand-built bike will be issued a name - in lieu of a serial number - that corresponds with each of the 47 Ronin of ancient Japanese lore. An initial release of 10 bikes in the original silver and black trim will start at $38,000. There will be multiple incarnations in the line at price points corresponding with their finish and features.</p>            
+
+            <p>Release of the Ronin models will begin in mid-2013 and will occur in stages until the 47th Ronin leaves the workshop, at which time production will cease.</p>
+            
+            <p>Send us an email and we’ll contact you with updates, availablity and news about the evolution of the Ronin.</p>
+            <h2><a href="mailto:info@roninmotorworks.com?subject=Request_for_information" >Request more information and updates<br> from Ronin Motorworks</a></h2>
+      </div>
+      <div class="three columns last photos">
+        <div class="row">
+          <div class="twelve columns">
+            <a class="fancybox photo" rel="gallery1" href="/assets/images/large/present1.jpg">
+              <img src="/assets/images/present1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="twelve columns">
+            <a class="fancybox photo" rel="gallery1" href="/assets/images/large/present2.jpg">
+              <img src="/assets/images/present2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="twelve columns">
+            <a class="fancybox photo" rel="gallery1" href="/assets/images/large/present2.jpg">
+              <img src="/assets/images/present3.jpg" alt="" />
+            </a>
           </div>
         </div>
-      </div> <!-- row -->
-    </div> <!--#home-->
-    
-    <div id="present" class="slide" data-slide="3">
-      <div class="row">
-        <div class="ten columns offset-by-two">
-          <div class="row">
-            <div class="six columns leftColumn">
-                <h1><span>THE</span> PRESENT</h1>
-                <p>Limited to a production run of 47 Ronin motorcycles, each hand-built bike will be issued a name - in lieu of a serial number - that corresponds with each of the 47 Ronin of ancient Japanese lore. An initial release of 10 bikes in the original silver and black trim will start at $38,000. There will be multiple incarnations in the line at price points corresponding with their finish and features.</p>
-            </div>
-            <div class="six columns rightColumn"></div>
-          </div> <!-- row -->
-          <div class="row">
-              <a class="four columns fancybox photo" rel="gallery1" href="/assets/images/large/present1.jpg">
-                <img src="/assets/images/present1.jpg" alt="" />
-              </a>
-              <a class="four columns fancybox photo" rel="gallery1" href="/assets/images/large/present2.jpg">
-                <img src="/assets/images/present2.jpg" alt="" />
-              </a>
-              <a class="four columns fancybox photo" rel="gallery1" href="/assets/images/large/present3.jpg">
-                <img src="/assets/images/present3.jpg" alt="" />
-              </a>
-          </div>
-        </div> <!-- ten columns -->
-      </div> <!-- row -->
-	 </div> <!--#present-->
-    
-    <div id="future" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
-      <div class="row">
-        <div class="ten columns offset-by-two">
-          <div class="row">
-            <div class="six columns leftColumn">
-              <img src="assets/images/roninLogoDark.png" class="logo" alt="ronin motorworks" />
-              <h1><span>THE</span> FUTURE</h1>
-              <p>Release of the Ronin models will begin in mid-2013 and will occur in stages until the 47th Ronin leaves the workshop, at which time production will cease. </p>
-              
-              <p>Send us an email and we’ll contact you with updates, availablity and news about the evolution of the Ronin.</p>
-              <h2><a href="mailto:info@roninmotorworks.com?subject=Request_for_information" >Request more information and updates<br> from Ronin Motorworks</a></h2>
-            </div>
-            <div class="rightColumn"></div>
-          </div><!-- row -->
-        </div><!-- ten columns -->
-      </div><!-- row -->
-    </div> <!--#future-->
-    
-  </div><!-- #main -->
+      </div>
+    </div><!-- row -->
+  </div> <!--#future-->
+
 
 	<!-- Included JS Files (Uncompressed) -->
 	
@@ -141,29 +92,8 @@
 	
 	<script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
 	
-	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.magellan.js"></script>
-	
 	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
 	
-	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
-	
-	<script src="javascripts/foundation/jquery.placeholder.js"></script>
-	
-
   <!-- Application Javascript, safe to override -->
   <script src="javascripts/foundation/app.js"></script>
 </body>

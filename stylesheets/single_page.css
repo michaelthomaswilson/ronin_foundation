@@ -30,46 +30,50 @@
 html, body {
   height: 100%;
   text-align: left;
-  font-family: "ZurichCondensed", Arial, Helvetica;
+  font-family: "ZurichCondensedLight", Arial, Helvetica;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 300;
   color: #fff;
   border: 0;
   margin: 0;
   padding: 0;
-  background: #000;
+  background: #070812 url("/assets/images/background-future-3.jpg") no-repeat fixed;
+  background-size: cover;
 }
 
-/* line 59, ../sass/single_page.scss */
+/* line 60, ../sass/single_page.scss */
 h1 {
-  font-family: 'AshRegular';
+  font-family: "ZurichCondensed", Arial, Helvetica;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 2em;
   line-height: 1em;
   letter-spacing: .05em;
   margin-top: 0;
   margin-bottom: 0.6em;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   color: #fff;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-/* line 73, ../sass/single_page.scss */
-h1 > span {
-  color: #74797f;
 }
 
 /* line 75, ../sass/single_page.scss */
+h1 > span {
+  font-family: "ZurichCondensedLight", Arial, Helvetica;
+  font-weight: 300;
+  color: #74797f;
+}
+
+/* line 81, ../sass/single_page.scss */
 h2 {
   font-family: 'ZurichCondensed';
+  font-weight: 500;
   font-size: 1.15em;
   line-height: 1em;
   text-transform: uppercase;
   color: #70757c;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-/* line 84, ../sass/single_page.scss */
+/* line 91, ../sass/single_page.scss */
 h2 > span {
   display: inline-block;
   font-family: 'ZurichCondensedLight';
@@ -78,27 +82,20 @@ h2 > span {
   margin-left: 5px;
 }
 
-/* line 92, ../sass/single_page.scss */
-h2 + p {
-  margin-top: 0px;
-  font-size: 1.1em;
-  letter-spacing: normal;
-}
-
-/* line 94, ../sass/single_page.scss */
+/* line 99, ../sass/single_page.scss */
 p {
   font-family: 'ZurichCondensedLight';
-  font-size: 16px;
-  line-height: 1.3em;
+  font-size: 1.25em;
+  line-height: 1.4em;
 }
 
-/* line 100, ../sass/single_page.scss */
+/* line 105, ../sass/single_page.scss */
 a, a:visited, a:active {
   color: #768794;
   text-decoration: none;
 }
 
-/* line 101, ../sass/single_page.scss */
+/* line 106, ../sass/single_page.scss */
 a:hover {
   color: #fff;
 }
@@ -106,65 +103,29 @@ a:hover {
 /*************************************************************************/
 /*   Classes
 /*************************************************************************/
-/* line 108, ../sass/single_page.scss */
-.photo {
+/* line 113, ../sass/single_page.scss */
+a.photo {
   display: block;
   padding: 5px;
   border: 1px solid #73787f;
   background: #000;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
+/* line 123, ../sass/single_page.scss */
+a.photo:hover {
+  border: 1px solid #c51213;
+}
 
-/* line 119, ../sass/single_page.scss */
+/* line 128, ../sass/single_page.scss */
 .mark {
   position: absolute;
   opacity: .1;
 }
 
-/* line 121, ../sass/single_page.scss */
-.navigation {
-  position: fixed;
-  top: 0;
-  left: 0px;
-  height: 100%;
-  width: 120px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 100;
-}
-/* line 132, ../sass/single_page.scss */
-.navigation span.content {
-  bottom: 0;
-  position: absolute;
-  right: 0;
-  width: 100%;
-}
-
-/* line 140, ../sass/single_page.scss */
-.navigation ul {
-  height: 100%;
-  width: auto;
-}
-
-/* line 145, ../sass/single_page.scss */
-.navigation li {
-  position: relative;
-  display: block;
-  height: 20%;
-  width: auto;
-  margin: 0 0 5px;
-  padding: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  background: url(/assets/images/navBackground.png) repeat-y;
-  text-align: right;
-  text-decoration: none;
-}
-
-/* line 159, ../sass/single_page.scss */
+/* line 130, ../sass/single_page.scss */
 .selected {
   color: #c51213 !important;
 }
@@ -172,132 +133,22 @@ a:hover {
 /*************************************************************************/
 /*   ID's
 /*************************************************************************/
-/* line 168, ../sass/single_page.scss */
-#history, #home, #present, #future {
-  position: relative;
-  border: 1px solid #333333;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  height: 100%;
-  min-height: 768px;
-}
-
-/* line 176, ../sass/single_page.scss */
+/* line 139, ../sass/single_page.scss */
 #future {
-  background: white url("/assets/images/background-future-2.jpg") 50% 0 no-repeat fixed;
-  background-size: 100%;
+  position: relative;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
+  height: auto;
+  margin: 100px 0;
 }
-/* line 183, ../sass/single_page.scss */
+/* line 148, ../sass/single_page.scss */
 #future h1 {
   color: #C51213;
 }
-/* line 187, ../sass/single_page.scss */
+/* line 152, ../sass/single_page.scss */
 #future p {
-  color: #70757c;
-}
-/* line 191, ../sass/single_page.scss */
-#future .leftColumn, #future .rightColumn {
-  margin-top: 15%;
-}
-/* line 195, ../sass/single_page.scss */
-#future .logo {
-  opacity: 1;
-  margin-bottom: 50px;
-  width: 110px;
-}
-
-/* line 199, ../sass/single_page.scss */
-#history {
-  position: relative;
-  background: #0b0803 url("/assets/images/bg_heavy.jpg") 50% 0 no-repeat fixed;
-  background-size: 100%;
-  color: #fff;
-  height: 100%;
-  min-height: 768px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-  z-index: 5;
-}
-/* line 211, ../sass/single_page.scss */
-#history h1 {
-  text-shadow: #0b0803 0 0 1px;
-}
-/* line 215, ../sass/single_page.scss */
-#history .photo {
-  display: block;
-  width: 250px;
-  height: 150px;
-  margin-right: 30px;
-}
-/* line 222, ../sass/single_page.scss */
-#history img.mark {
-  position: fixed;
-  top: 35%;
-  left: 72%;
-}
-/* line 224, ../sass/single_page.scss */
-#history .leftcolumn {
-  margin-top: 100px;
-}
-/* line 228, ../sass/single_page.scss */
-#history .logo {
-  margin-top: 25px;
-}
-/* line 232, ../sass/single_page.scss */
-#history .rightColumn {
-  margin-top: 30px;
-}
-/* line 236, ../sass/single_page.scss */
-#history .logo {
-  opacity: .5;
-  margin-bottom: 50px;
-  width: 110px;
-}
-
-/* line 239, ../sass/single_page.scss */
-#home {
-  background: black url("/assets/images/background-home.jpg") 50% 0 no-repeat fixed;
-  background-size: 100%;
-  color: white;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-  z-index: 10;
-}
-/* line 248, ../sass/single_page.scss */
-#home .leftColumn, #home .rightColumn {
-  margin-top: 35%;
-}
-
-/* line 254, ../sass/single_page.scss */
-#present {
-  background: url("/assets/images/background-present-2.jpg") 50% 0 no-repeat fixed;
-  background-size: 100%;
-  color: white;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-}
-/* line 262, ../sass/single_page.scss */
-#present .leftColumn, #present .rightColumn {
-  margin-top: 30%;
-  margin-bottom: 50px;
-}
-/* line 267, ../sass/single_page.scss */
-#present a.photo {
-  text-align: center;
-}
-
-/* line 272, ../sass/single_page.scss */
-#selected {
-  position: absolute;
-  width: 5px;
-  height: 20%;
-  background: red;
-  top: 0;
+  color: #dbdae0;
 }
 
 /*************************************************************************/
@@ -305,44 +156,40 @@ a:hover {
 /*************************************************************************/
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 289, ../sass/single_page.scss */
+  /* line 175, ../sass/single_page.scss */
   h1 {
-    font-size: 1.1em;
-    line-height: 1em;
     letter-spacing: .05em;
     margin-bottom: 10px;
   }
 
-  /* line 296, ../sass/single_page.scss */
+  /* line 180, ../sass/single_page.scss */
   h2 {
     font-size: 1.15em;
     line-height: 1em;
   }
 
-  /* line 301, ../sass/single_page.scss */
+  /* line 185, ../sass/single_page.scss */
   p {
-    font-size: 17px;
-    line-height: 1.3em;
-    -webkit-font-smoothing: antialiased;
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
 
-  /* line 308, ../sass/single_page.scss */
-  #history, #home, #present, #future {
-    background-attachment: scroll;
+  /* line 190, ../sass/single_page.scss */
+  #future {
+    height: auto;
   }
-
-  /* line 313, ../sass/single_page.scss */
-  #home .leftColumn, #home .rightColumn {
-    margin-top: 30%;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 201, ../sass/single_page.scss */
+  #future {
+    height: auto;
   }
-
-  /* line 320, ../sass/single_page.scss */
-  #present .leftColumn, #present .rightColumn {
-    margin-top: 130px;
-    margin-bottom: 50px;
-  }
-  /* line 325, ../sass/single_page.scss */
-  #present a.photo {
-    text-align: center;
+  /* line 204, ../sass/single_page.scss */
+  #future .logo {
+    position: relative;
+    top: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 }
