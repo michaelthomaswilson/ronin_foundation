@@ -92,26 +92,18 @@
 	"buffers":
 	[
 		{
-			"contents": "<h2 class=\"sub-heading\">RESOURCES</h2>\n<ul class=\"side-nav\">\n    <li>\n        <a class=\"ActiveLink\" id=\"ctl00_contentSidebar_sidebar1_hypResourceCenter\" href=\"./\">RESOURCE CENTER</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"articles\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypArticlesGuide\" href=\"/resources\">ARTICLES & GUIDES</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"casestudies\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypCaseStudy\" href=\"/resources/casestudies\">CASE STUDIES & INTERVIEWS</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"whitepapers\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypInfographics\" href=\"/resources/whitepapers\">INFOGRAPHICS & WHITE PAPERS</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"videos\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypWebinars\" href=\"/resources/videos\">WEBINARS & VIDEOS</a>\n    </li>\n    <li class=\"teritaryMenu\">\n        <a id=\"ctl00_contentSidebar_sidebar1_hypResourcesbyIndustry\" href=\"/resources\">RESOURCES BY INDUSTRY</a>\n        <ul class=\"child-nav\">\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypAutoFinance\" href=\"/resources/category/autofinance\">AUTO FINANCE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypConsumerFinance\" href=\"/resources/category/consumerfinance\">CONSUMER FINANCE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypGovernment\" href=\"/resources/category/government\">GOVERNMENT</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypInsurance\" href=\"/resources/category/insurance\">INSURANCE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypMortgage\" href=\"/resources/category/mortgage\">MORTGAGE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypUtilities\" href=\"/resources/category/utilities\">UTILITIES</a>\n            </li>\n        </ul>\n    </li>\n</ul>\n",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2124,
+				"buffer_size": 5329,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "{payments_header}\n\n<body>\n    <form name=\"aspnetForm\" method=\"post\" action=\"http://payments.westernunion.com/industry-solutions/auto-finance/Default.aspx\" id=\"aspnetForm\">\n<div>\n<input name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKMTE2NTQwOTIyOA9kFgJmD2QWBAIBD2QWAgIFDxYCHgRUZXh0BecBPG1ldGEgY29udGVudD0nRW5kLXRvLWVuZCBiaWxsIHBheW1lbnQgc29sdXRpb25zLCBidXNpbmVzc2VzIGhhdmUgYSB2YXJpZXR5IG9mIGNvbnZlbmllbnQgcGF5bWVudCBtZXRob2RzIGZvciB0aGVpciBjdXN0b21lcnMgaW5jbHVkaW5nIHdhbGstaW4gY2FzaCwgY3JlZGl0L2RlYml0IGNhcmRzLCBBQ0ggYW5kIG90aGVyIGVsZWN0cm9uaWMgb3B0aW9ucy4nIG5hbWU9J2Rlc2NyaXB0aW9uJz48L21ldGE+ZAIDD2QWBAIDD2QWAgIBDw8WBB4IQ3NzQ2xhc3MFD2FjdGl2ZVBhZ2VGaXJzdB4EXyFTQgICZGQCCQ9kFgICAQ9kFgQCAQ8PFgQfAWUfAgICZGQCAw8PFgQfAQUKQWN0aXZlTGluax8CAgJkZGRDUNFU1imV/1KsF+Fza9+7dwiykw==\" type=\"hidden\">\n</div>\n\n    \n{embed=\"embeds/top_navigation\" my_location=\"about_us\"}\n\n{payments_breadcrumbs}\n\n    <div id=\"content_wrapper\">\n        <div id=\"primary\">\n            \n    <!-- insert channel content here -->\n    {exp:channel:entries channel=\"payments_product_communications\" limit=\"1\"}\n        {products_headline}\n        \n        <table>\n        <tbody>\n            <tr>\n                <td style=\"width: 50%;\">\n                    {products_left_content}\n                </td>\n                <td style=\"width: 50%;\">\n                    {products_right_content}\n                </td>\n            </tr>\n        </tbody>\n    </table>\n        {products_full_column}\n    {/exp:channel:entries}\n\n</div>\n        \n<div id=\"secondary\">\n                \n    {embed=\"embeds/products_sidenav\" my_location=\"billing\"}\n\n    <div class=\"clear\"></div>\n\n            {payments_sidebar_smallbiz}\n\n            {payments_sidebar_contact}\n\n        </div>\n        <div class=\"clear\">\n        </div>\n    </div>\n    \n{payments_footer}\n\n</form>\n\n\n<div style=\"display: none;\" id=\"cboxOverlay\"></div><div style=\"display: none; padding-bottom: 42px; padding-right: 42px;\" class=\"\" id=\"colorbox\"><div id=\"cboxWrapper\"><div><div style=\"float: left;\" id=\"cboxTopLeft\"></div><div style=\"float: left;\" id=\"cboxTopCenter\"></div><div style=\"float: left;\" id=\"cboxTopRight\"></div></div><div style=\"clear: left;\"><div style=\"float: left;\" id=\"cboxMiddleLeft\"></div><div style=\"float: left;\" id=\"cboxContent\"><div style=\"width: 0px; height: 0px; overflow: hidden; float: left;\" id=\"cboxLoadedContent\"></div><div style=\"float: left;\" id=\"cboxLoadingOverlay\"></div><div style=\"float: left;\" id=\"cboxLoadingGraphic\"></div><div style=\"float: left;\" id=\"cboxTitle\"></div><div style=\"float: left;\" id=\"cboxCurrent\"></div><div style=\"float: left;\" id=\"cboxNext\"></div><div style=\"float: left;\" id=\"cboxPrevious\"></div><div style=\"float: left;\" id=\"cboxSlideshow\"></div><div style=\"float: left;\" id=\"cboxClose\"></div></div><div style=\"float: left;\" id=\"cboxMiddleRight\"></div></div><div style=\"clear: left;\"><div style=\"float: left;\" id=\"cboxBottomLeft\"></div><div style=\"float: left;\" id=\"cboxBottomCenter\"></div><div style=\"float: left;\" id=\"cboxBottomRight\"></div></div></div><div style=\"position: absolute; width: 9999px; visibility: hidden; display: none;\"></div></div></body>\n</html>\n",
+			"file": "sass/single_page.scss",
 			"settings":
 			{
-				"buffer_size": 3132,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<h2 class=\"sub-heading\">SOLUTIONS<br>BY INDUSTRY</h2>\n    <ul class=\"side-nav\">\n        <li>\n            <a {if '{embed:my_location}'==\"industry_solutions\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypIndustrySolutions\" href=\"/industry-solutions/\">INDUSTRY SOLUTIONS</a>\n        </li>\n        <li>\n            <a {if '{embed:my_location}'==\"auto_finance\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypAutoFinance\" href=\"/industry-solutions/auto-finance/\">AUTO FINANCE</a></li>\n        <li>\n            <a {if '{embed:my_location}'==\"consumer_finance\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypConsumerFinance\" href=\"/industry-solutions/consumer-finance/\">CONSUMER FINANCE</a>\n        </li>\n        <li class=\"teritaryMenu\">\n            <a {if '{embed:my_location}'==\"government\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypGovernment\" href=\"/industry-solutions/government/\">GOVERNMENT</a>\n            <ul class=\"child-nav\">\n                <li>\n                    <a id=\"ctl00_contentSidebar_sidebar1_hypGovernmentAgencies\" href=\"/industry-solutions/government/agencies/\">GOVERNMENT AGENCIES</a></li>\n                <li>\n                    <a id=\"ctl00_contentSidebar_sidebar1_hypDepartmentofCorrections\" href=\"/industry-solutions/government/corrections/\">DEPARTMENT OF CORRECTIONS</a></li>\n            </ul>\n        </li>\n        <li>\n            <a {if '{embed:my_location}'==\"insurance\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypInsurance\" href=\"/industry-solutions/insurance/\">INSURANCE</a></li>\n        <li>\n            <a {if '{embed:my_location}'==\"mortgage\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypMortgage\" href=\"/industry-solutions/mortgage/\">MORTGAGE</a></li>\n        <li>\n            <a {if '{embed:my_location}'==\"utilities\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypUtilities\" href=\"/industry-solutions/utilities/\">UTILITIES &amp; TELECOM</a></li>\n    </ul>",
-			"settings":
-			{
-				"buffer_size": 2007,
+				"buffer_size": 4473,
 				"line_ending": "Unix"
 			}
 		}
@@ -140,6 +132,8 @@
 	},
 	"file_history":
 	[
+		"/Users/mwilson/Documents/Repo/ronin_foundation/index.html.old",
+		"/Users/mwilson/Documents/Repo/ronin_foundation/index.html.old2",
 		"/Users/mwilson/Documents/Repo/ronin_foundation/sass/custom.scss",
 		"/Users/mwilson/Documents/Repo/ronin_foundation/index.html",
 		"/Users/mwilson/Documents/Repo/ronin_foundation/sass/stylesheet.scss",
@@ -315,86 +309,60 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2124,
+						"buffer_size": 5329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								213,
-								275
+								3736,
+								3736
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 625.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "sass/single_page.scss",
 					"settings":
 					{
-						"buffer_size": 3132,
+						"buffer_size": 4473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								939,
-								939
+								3605,
+								3605
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"settings":
-					{
-						"buffer_size": 2007,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1698,
-								1698
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2340.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
