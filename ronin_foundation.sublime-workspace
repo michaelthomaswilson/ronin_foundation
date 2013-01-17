@@ -103,7 +103,7 @@
 			"file": "sass/single_page.scss",
 			"settings":
 			{
-				"buffer_size": 4473,
+				"buffer_size": 4470,
 				"line_ending": "Unix"
 			}
 		}
@@ -239,6 +239,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#C51213",
 			".logo",
 			".photo",
 			".mark",
@@ -324,8 +325,8 @@
 						"selection":
 						[
 							[
-								3736,
-								3736
+								1535,
+								1535
 							]
 						],
 						"settings":
@@ -335,7 +336,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 625.0,
+						"translation.y": 312.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -345,15 +346,15 @@
 					"file": "sass/single_page.scss",
 					"settings":
 					{
-						"buffer_size": 4473,
+						"buffer_size": 4470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3605,
-								3605
+								2281,
+								2281
 							]
 						],
 						"settings":
@@ -362,7 +363,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2340.0,
+						"translation.y": 803.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -59,7 +59,7 @@ h1 {
 h1 > span {
   font-family: "ZurichCondensedLight", Arial, Helvetica;
   font-weight: 300;
-  color: #74797f;
+  color: #70757c;
 }
 
 /* line 81, ../sass/single_page.scss */
@@ -144,7 +144,7 @@ a.photo:hover {
 }
 /* line 148, ../sass/single_page.scss */
 #future h1 {
-  color: #C51213;
+  color: #fff;
 }
 /* line 152, ../sass/single_page.scss */
 #future p {
