@@ -15,12 +15,94 @@
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/app.css">
 	<link rel="stylesheet" href="assets/styles/jquery.fancybox.css" />
- 	<link rel="stylesheet" href="stylesheets/single_page.css" />  
+ 	<link rel="stylesheet" href="stylesheets/custom.css" />  
 
 	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 	<script src="javascripts/foundation/jquery.js"></script>
   <script src="assets/js/jquery.easing.1.3.js"></script>
 	<script src="assets/js/jquery.fancybox.js"></script>
+	<script src="assets/js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+
+	<script type="text/javascript"> 
+
+  $(window).resize(function(){
+    matchWindow();
+  });
+
+  function matchWindow() {
+      var height = $(window).height();
+      if (height > 768) {
+          $('#history, #home, #present, #future').height(height);
+      }
+  }
+
+  function scrollToHome() {
+    var top = $('#home').offset().top;
+    $('html,body').animate({scrollTop: top}, 800, 'easeInOutSine');
+    return false;
+  }
+  
+  $(document).ready(function(){
+
+    matchWindow();
+    scrollToHome();
+
+    // initialize nav scrolling 
+
+    $('ul.navigation').localScroll({easing:'easeInOutSine'});
+
+    $('#history').waypoint(function() {
+      console.log("id: history");
+    }, { offset: '-20%' });  
+
+    $('#home').waypoint(function() {
+      console.log("id: home");
+    }, { offset: '0' }); 
+
+    $('#present').waypoint(function() {
+      console.log("id: present");
+    }, { offset: '30%' });
+
+    $('#future').waypoint(function() {
+      console.log("id: future");
+    }, { offset: '30%' });     
+
+    // setup fancybox
+    $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
+	 
+    $('ul.navigation a').click(function(){
+		  setNav(this);
+		});
+	  //setSelected();
+    
+  });
+  
+  function setNav(el) {
+	  // remove existing class
+	  $('.selected').removeClass('selected');
+	  // add class
+	  $(el).addClass('selected');
+	  $(el).blur();
+	  //setSelected(el);
+  }
+  
+  function setSelected() {
+	  console.log('setSelected');
+	  	//var el  = '.selected';
+		var y = $('.selected').offset().top - $(window).scrollTop(); // - $('#selected').height() + 18;
+		//var delta = (y + $('#selected').height());
+		//console.log('delta = ' + y);
+		$('#selected')
+		.animate({
+			top: y
+		}, 1000, 'easeOutCubic')
+  }
+  </script>
 
 </head>
 <body>

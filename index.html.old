@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Ronin Motorworks</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<link rel="stylesheet" href="assets/styles/jquery.fancybox.css" />
+ 	<link rel="stylesheet" href="stylesheets/stylesheet.css" />  
+
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<script src="assets/js/jquery.fancybox.js"></script>
+	<script src="assets/js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+
+	<script type="text/javascript"> 
+  
+  $(document).ready(function(){
+
+    // initialize nav scrolling 
+
+    $('ul.navigation').localScroll({easing:'easeInOutSine'});
+    $.scrollTo($('div#home'), 800, {easing:'easeInOutSine'} );
+
+    $('#history').waypoint(function() {
+      console.log("id: history");
+    }, { offset: '-20%' });  
+
+    $('#home').waypoint(function() {
+      console.log("id: home");
+    }, { offset: '0' }); 
+
+    $('#present').waypoint(function() {
+      console.log("id: present");
+    }, { offset: '30%' });
+
+    $('#future').waypoint(function() {
+      console.log("id: future");
+    }, { offset: '30%' });     
+
+    matchWindow();
+
+    // setup fancybox
+    $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
+	 
+    $('ul.navigation a').click(function(){
+		  setNav(this);
+		});
+	  //setSelected();
+    
+  });
+  
+  function setNav(el) {
+	  // remove existing class
+	  $('.selected').removeClass('selected');
+	  // add class
+	  $(el).addClass('selected');
+	  $(el).blur();
+	  //setSelected(el);
+  }
+  
+  function setSelected() {
+	  console.log('setSelected');
+	  	//var el  = '.selected';
+		var y = $('.selected').offset().top - $(window).scrollTop(); // - $('#selected').height() + 18;
+		//var delta = (y + $('#selected').height());
+		//console.log('delta = ' + y);
+		$('#selected')
+		.animate({
+			top: y
+		}, 1000, 'easeOutCubic')
+  }
+  </script>
+
+</head>
+<body>
+
+	<div role="main">
+    <ul class="navigation">
+    	<!-- <div id="selected"></div> -->
+        <li><span class="content"><a href="#history" title="the history"  data-slide="1">THE HISTORY</a></span></li>
+        <li><span class="content"><a class="selected" href="#home" title="home"  data-slide="2">HOME</a></span></li>
+        <li><span class="content"><a href="#present" title="the present"  data-slide="3">THE PRESENT</a></span></li>
+        <li><span class="content"><a href="#future" title="the future" data-slide="4">THE FUTURE</a></span></li>
+        <li></li>
+    </ul>
+    <div id="history" class="slide" data-slide="1" >
+    	<img src="assets/images/47.png" class="mark" />
+      <div class="leftColumn" data-stellar-ratio="0.7">
+        <img src="assets/images/logo_old.png" class="logo" alt="ronin motorworks" />
+        <h1><span>THE</span> HISTORY</h1>
+        <p>From time to time, the Magpul Design and Engineering Staff engages in “Design Exercises”, tackling design challenges outside the field of firearms and firearms accessories.  We do this so that Magpul designs stay innovative and because there is value to understanding the relationship that various design elements have with the end user across various industries.  In doing this, we aim to capture the brightest elements of a broad range of solutions to bring our customers the best possible products.</p>
+
+        <p>The “Magpul Ronin” was one such design exercise from the fall of 2009.  The staff at Magpul, always fans of American-Made products, took interest in the Buell line of motorcycles, culminating with the Buell 1125 series.  Wondering where the platform could go under the efforts of the team, several motorcycles were purchased when Buell ceased production in the fall of 2009.  From this design exercise came the “Magpul Ronin”, a concept piece which was shown at SHOT show 2010.  There was never any intent to produce the motorcycle, but it was merely presented for what it was...a design piece. </p>
+
+      </div>
+      <div class="rightColumn">
+        <a class="fancybox photo" rel="gallery1" href="/assets/images/large/history1.jpg">
+          <img src="/assets/images/history1.jpg" alt="" />
+        </a>
+        <a class="fancybox photo" rel="gallery1" href="/assets/images/large/history2.jpg">
+          <img src="/assets/images/history2.jpg" alt="" />
+        </a>
+        <a class="fancybox photo" rel="gallery1" href="/assets/images/large/history3.jpg">
+          <img src="/assets/images/history3.jpg" alt="" />
+        </a>
+        <a class="fancybox photo" rel="gallery1" href="/assets/images/large/history4.jpg">
+          <img src="/assets/images/history4.jpg" alt="" />
+        </a>
+      </div>
+    </div> <!--#history-->
+    
+    <div id="home" class="slide" data-slide="2">
+      <div class="leftColumn">
+          <img src="assets/images/roninLogo.png" alt="ronin motorworks" />
+      </div>
+      <div class="rightColumn">
+        <h1>the magpul ronin.</h1>
+        <p>Donec felis nunc, porttitor quis dictum at, condimentum eu risus. Nam enim elit, mattis a pulvinar ac, egestas et nisi. Nunc rutrum consectetur viverra. Phasellus placerat leo erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer a velit sit amet augue porttitor facilisis. Nulla facilisi. Donec commodo, neque vel hendrerit feugiat, augue massa ornare urna, in aliquet eros felis eu mi. </p>
+      </div>
+    </div> <!--#home-->
+    
+    <div id="present" class="slide" data-slide="3" data-stellar-background-ratio="0.8">
+      <div class="leftColumn">
+          <h1><span>THE</span> PRESENT</h1>
+          <p>Taking inspiration from the initial Magpul concept, Ronin staff went to the drawing board and re-designed every facet of the motorcycle from scratch, creating the high-performance Ronin you see today in a limited run of 47 total motorcycles.  With Magpul approval that the final version stayed true to the initial concept in form and spirit despite being transformed functionally into a different motorcycle entirely, the final version of the “Magpul Ronin” was completed late in 2012. </p>
+      </div>
+      <div class="rightColumn">
+          <h1>&nbsp;</h1>
+          <p>Ronin Motorcycle Works and the final production version of the “Magpul Ronin” are here with Magpul for SHOT Show 2013 to show the culmination of the original design concept.  Additional information about Ronin availability as well as all technical information is available from Ronin Motorcycle Works staff, co-located with Magpul Industries in booth #10362.</p>
+      </div>
+      <div class="row">
+        <a class="fancybox photo" rel="gallery1" href="/assets/images/large/present1.jpg">
+          <img src="/assets/images/present1.jpg" alt="" />
+        </a>
+        <a class="fancybox photo" rel="gallery1" href="/assets/images/large/present2.jpg">
+          <img src="/assets/images/present2.jpg" alt="" />
+        </a>
+        <a class="fancybox photo" rel="gallery1" href="/assets/images/large/present3.jpg">
+          <img src="/assets/images/present3.jpg" alt="" />
+        </a>
+      </div>
+	 </div> <!--#present-->
+    
+    <div id="future" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
+      <div class="leftColumn">
+        <img src="assets/images/roninLogoDark.png" class="logo" alt="ronin motorworks" />
+        <h1><span>THE</span> FUTURE</h1>
+        <p>Ronin Motorcycle Works and the final production version of the “Magpul Ronin” are here with Magpul for SHOT Show 2013 to show the culmination of the original design concept.  Additional information about Ronin availability as well as all technical information is available from Ronin Motorcycle Works staff, co-located with Magpul Industries in booth #10362.</p>
+        
+        <p>We’ll contact you with updates, availablity and news about the evolution of the Ronin.</p>
+        <h2><a href="mailto:info@roninmotorworks.com?subject=Request_for_information" >Request more information and updates<br> from Ronin Motorworks</a></h2>
+      </div>
+      <div class="rightColumn">
+      </div>
+    </div> <!--#future-->
+    
+  </div><!-- #main -->
+
+	<!-- Included JS Files (Uncompressed) -->
+	<script src="javascripts/foundation/jquery.js"></script>
+	
+	<script src="javascripts/foundation/jquery.cookie.js"></script>
+	
+	<script src="javascripts/foundation/jquery.event.move.js"></script>
+	
+	<script src="javascripts/foundation/jquery.event.swipe.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.joyride.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.magellan.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
+	
+	<script src="javascripts/foundation/jquery.placeholder.js"></script>
+	
+
+  <!-- Application Javascript, safe to override -->
+  <script src="javascripts/foundation/app.js"></script>
+</body>
+</html>
