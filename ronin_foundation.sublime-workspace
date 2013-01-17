@@ -1,0 +1,567 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"right",
+				"rightColumn"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"bl",
+				"inline-block"
+			],
+			[
+				"column",
+				"column_one"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"project",
+				"project_type"
+			],
+			[
+				"top",
+				"topSpace"
+			],
+			[
+				"fancy",
+				"fancybox-close"
+			],
+			[
+				"fancyb",
+				"fancybox-wrap"
+			],
+			[
+				"ste",
+				"stetson"
+			],
+			[
+				"caps",
+				"capsuleHeight"
+			],
+			[
+				"sc",
+				"scroller"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"cap",
+				"capsuleWidth"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"ca",
+				"capsuleWidth"
+			],
+			[
+				"capsule",
+				"capsuleWidth"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<h2 class=\"sub-heading\">RESOURCES</h2>\n<ul class=\"side-nav\">\n    <li>\n        <a class=\"ActiveLink\" id=\"ctl00_contentSidebar_sidebar1_hypResourceCenter\" href=\"./\">RESOURCE CENTER</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"articles\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypArticlesGuide\" href=\"/resources\">ARTICLES & GUIDES</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"casestudies\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypCaseStudy\" href=\"/resources/casestudies\">CASE STUDIES & INTERVIEWS</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"whitepapers\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypInfographics\" href=\"/resources/whitepapers\">INFOGRAPHICS & WHITE PAPERS</a>\n    </li>\n    <li>\n        <a {if '{embed:my_location}'==\"videos\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypWebinars\" href=\"/resources/videos\">WEBINARS & VIDEOS</a>\n    </li>\n    <li class=\"teritaryMenu\">\n        <a id=\"ctl00_contentSidebar_sidebar1_hypResourcesbyIndustry\" href=\"/resources\">RESOURCES BY INDUSTRY</a>\n        <ul class=\"child-nav\">\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypAutoFinance\" href=\"/resources/category/autofinance\">AUTO FINANCE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypConsumerFinance\" href=\"/resources/category/consumerfinance\">CONSUMER FINANCE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypGovernment\" href=\"/resources/category/government\">GOVERNMENT</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypInsurance\" href=\"/resources/category/insurance\">INSURANCE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypMortgage\" href=\"/resources/category/mortgage\">MORTGAGE</a>\n            </li>\n            <li>\n                <a id=\"ctl00_contentSidebar_sidebar1_hypUtilities\" href=\"/resources/category/utilities\">UTILITIES</a>\n            </li>\n        </ul>\n    </li>\n</ul>\n",
+			"settings":
+			{
+				"buffer_size": 2124,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{payments_header}\n\n<body>\n    <form name=\"aspnetForm\" method=\"post\" action=\"http://payments.westernunion.com/industry-solutions/auto-finance/Default.aspx\" id=\"aspnetForm\">\n<div>\n<input name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwUKMTE2NTQwOTIyOA9kFgJmD2QWBAIBD2QWAgIFDxYCHgRUZXh0BecBPG1ldGEgY29udGVudD0nRW5kLXRvLWVuZCBiaWxsIHBheW1lbnQgc29sdXRpb25zLCBidXNpbmVzc2VzIGhhdmUgYSB2YXJpZXR5IG9mIGNvbnZlbmllbnQgcGF5bWVudCBtZXRob2RzIGZvciB0aGVpciBjdXN0b21lcnMgaW5jbHVkaW5nIHdhbGstaW4gY2FzaCwgY3JlZGl0L2RlYml0IGNhcmRzLCBBQ0ggYW5kIG90aGVyIGVsZWN0cm9uaWMgb3B0aW9ucy4nIG5hbWU9J2Rlc2NyaXB0aW9uJz48L21ldGE+ZAIDD2QWBAIDD2QWAgIBDw8WBB4IQ3NzQ2xhc3MFD2FjdGl2ZVBhZ2VGaXJzdB4EXyFTQgICZGQCCQ9kFgICAQ9kFgQCAQ8PFgQfAWUfAgICZGQCAw8PFgQfAQUKQWN0aXZlTGluax8CAgJkZGRDUNFU1imV/1KsF+Fza9+7dwiykw==\" type=\"hidden\">\n</div>\n\n    \n{embed=\"embeds/top_navigation\" my_location=\"about_us\"}\n\n{payments_breadcrumbs}\n\n    <div id=\"content_wrapper\">\n        <div id=\"primary\">\n            \n    <!-- insert channel content here -->\n    {exp:channel:entries channel=\"payments_product_communications\" limit=\"1\"}\n        {products_headline}\n        \n        <table>\n        <tbody>\n            <tr>\n                <td style=\"width: 50%;\">\n                    {products_left_content}\n                </td>\n                <td style=\"width: 50%;\">\n                    {products_right_content}\n                </td>\n            </tr>\n        </tbody>\n    </table>\n        {products_full_column}\n    {/exp:channel:entries}\n\n</div>\n        \n<div id=\"secondary\">\n                \n    {embed=\"embeds/products_sidenav\" my_location=\"billing\"}\n\n    <div class=\"clear\"></div>\n\n            {payments_sidebar_smallbiz}\n\n            {payments_sidebar_contact}\n\n        </div>\n        <div class=\"clear\">\n        </div>\n    </div>\n    \n{payments_footer}\n\n</form>\n\n\n<div style=\"display: none;\" id=\"cboxOverlay\"></div><div style=\"display: none; padding-bottom: 42px; padding-right: 42px;\" class=\"\" id=\"colorbox\"><div id=\"cboxWrapper\"><div><div style=\"float: left;\" id=\"cboxTopLeft\"></div><div style=\"float: left;\" id=\"cboxTopCenter\"></div><div style=\"float: left;\" id=\"cboxTopRight\"></div></div><div style=\"clear: left;\"><div style=\"float: left;\" id=\"cboxMiddleLeft\"></div><div style=\"float: left;\" id=\"cboxContent\"><div style=\"width: 0px; height: 0px; overflow: hidden; float: left;\" id=\"cboxLoadedContent\"></div><div style=\"float: left;\" id=\"cboxLoadingOverlay\"></div><div style=\"float: left;\" id=\"cboxLoadingGraphic\"></div><div style=\"float: left;\" id=\"cboxTitle\"></div><div style=\"float: left;\" id=\"cboxCurrent\"></div><div style=\"float: left;\" id=\"cboxNext\"></div><div style=\"float: left;\" id=\"cboxPrevious\"></div><div style=\"float: left;\" id=\"cboxSlideshow\"></div><div style=\"float: left;\" id=\"cboxClose\"></div></div><div style=\"float: left;\" id=\"cboxMiddleRight\"></div></div><div style=\"clear: left;\"><div style=\"float: left;\" id=\"cboxBottomLeft\"></div><div style=\"float: left;\" id=\"cboxBottomCenter\"></div><div style=\"float: left;\" id=\"cboxBottomRight\"></div></div></div><div style=\"position: absolute; width: 9999px; visibility: hidden; display: none;\"></div></div></body>\n</html>\n",
+			"settings":
+			{
+				"buffer_size": 3132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<h2 class=\"sub-heading\">SOLUTIONS<br>BY INDUSTRY</h2>\n    <ul class=\"side-nav\">\n        <li>\n            <a {if '{embed:my_location}'==\"industry_solutions\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypIndustrySolutions\" href=\"/industry-solutions/\">INDUSTRY SOLUTIONS</a>\n        </li>\n        <li>\n            <a {if '{embed:my_location}'==\"auto_finance\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypAutoFinance\" href=\"/industry-solutions/auto-finance/\">AUTO FINANCE</a></li>\n        <li>\n            <a {if '{embed:my_location}'==\"consumer_finance\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypConsumerFinance\" href=\"/industry-solutions/consumer-finance/\">CONSUMER FINANCE</a>\n        </li>\n        <li class=\"teritaryMenu\">\n            <a {if '{embed:my_location}'==\"government\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypGovernment\" href=\"/industry-solutions/government/\">GOVERNMENT</a>\n            <ul class=\"child-nav\">\n                <li>\n                    <a id=\"ctl00_contentSidebar_sidebar1_hypGovernmentAgencies\" href=\"/industry-solutions/government/agencies/\">GOVERNMENT AGENCIES</a></li>\n                <li>\n                    <a id=\"ctl00_contentSidebar_sidebar1_hypDepartmentofCorrections\" href=\"/industry-solutions/government/corrections/\">DEPARTMENT OF CORRECTIONS</a></li>\n            </ul>\n        </li>\n        <li>\n            <a {if '{embed:my_location}'==\"insurance\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypInsurance\" href=\"/industry-solutions/insurance/\">INSURANCE</a></li>\n        <li>\n            <a {if '{embed:my_location}'==\"mortgage\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypMortgage\" href=\"/industry-solutions/mortgage/\">MORTGAGE</a></li>\n        <li>\n            <a {if '{embed:my_location}'==\"utilities\"} class=\"ActiveLink\"{/if} id=\"ctl00_contentSidebar_sidebar1_hypUtilities\" href=\"/industry-solutions/utilities/\">UTILITIES &amp; TELECOM</a></li>\n    </ul>",
+			"settings":
+			{
+				"buffer_size": 2007,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mwilson/Documents/Repo/ronin_foundation/sass/custom.scss",
+		"/Users/mwilson/Documents/Repo/ronin_foundation/index.html",
+		"/Users/mwilson/Documents/Repo/ronin_foundation/sass/stylesheet.scss",
+		"/Users/mwilson/Documents/Repo/ronin_foundation/index.html.old.html",
+		"/Users/mwilson/Documents/Repo/ronin_foundation/stylesheets/stylesheet.css",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/tpl_consumer-finance.html",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/payments_assets/javascript/jquery/jquery.colorbox/untitled.html",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/payments_assets/javascript/jquery/jquery.colorbox/colorbox.css",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/index.html",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/tpl_auto-finance.html",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/tpl_industry-solutions.html",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/payments_assets/css/side-navigation.css",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/payments_assets/css/screen.css",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/payments_assets/css/navigation.css",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/payments_assets/css/base.css",
+		"/Users/mwilson/Documents/Repo/wu_payments/EE/assets/css/base.css",
+		"/Users/mwilson/Documents/Repo/v1prototype/app/views/layouts/taxonomy.html.erb",
+		"/Users/mwilson/Documents/Repo/v1prototype/app/models/taxonomy/garment_type.rb",
+		"/Users/mwilson/Documents/Repo/v1prototype/Gemfile",
+		"/Users/mwilson/Documents/Repo/v1prototype/db/schema.rb",
+		"/Users/mwilson/Documents/Repo/v1prototype/config/routes.rb",
+		"/Users/mwilson/Documents/Repo/v1prototype/README.md",
+		"/Users/mwilson/Documents/Repo/v1prototype/config/environments/development.rb",
+		"/Users/mwilson/Documents/Repo/v1prototype/config/initializers/omniauth.rb",
+		"/Users/mwilson/Documents/Repo/v1prototype/.gitignore",
+		"/Users/mwilson/Documents/Repo/dogstagram/Gemfile",
+		"/Users/mwilson/Documents/Repo/dogstagram/dogstagram.sublime-project",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/assets/javascripts/pages.js",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/controllers/pages_controller.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/views/layouts/application.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/views/pages/index.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/config/routes.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/views/layouts/project.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/assets/stylesheets/pages.css.scss",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/projects/app/views/refinery/projects/projects/show.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/views/pages/aboutus.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/articles/app/views/refinery/articles/articles/show.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/projects/app/controllers/refinery/projects/projects_controller.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/projects/app/models/refinery/projects/project.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/views/pages/blog.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/articles/app/controllers/refinery/articles/articles_controller.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/config/environments/development.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/config/environments/production.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/Gemfile",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/assets/stylesheets/theme.css.scss",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/assets/javascripts/application.js",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/assets/javascripts/refinery/admin.js.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/assets/javascripts/admin.js",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/public/stylesheets/themes.css",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/articles/app/views/refinery/articles/admin/articles/_form.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/db/migrate/20121114235859_create_articles_articles.refinery_articles.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/articles/db/migrate/1_create_articles_articles.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/.gitignore",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/projects/db/migrate/1_create_projects_projects.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/db/migrate/20121017170942_create_projects_projects.refinery_projects.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/db/migrate/20121112232501_add_project_type_to_project.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/vendor/extensions/projects/app/views/refinery/projects/admin/projects/_form.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/db/migrate/20121112185501_add_project_type_to_projects.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/config/initializers/refinery/core.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/config/initializers/refinery/images.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/config/application.rb",
+		"/Users/mwilson/Documents/Repo/pure-site-refinery/app/views/pages/cessna.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/config/routes.rb",
+		"/Users/mwilson/Documents/Repo/pure-site/config/initializers/refinery/authentication.rb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/controllers/pages_controller.rb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/assets/stylesheets/pages.css.scss",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/index.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/stetson.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/Gemfile",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/ncm.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/laphil.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/aopa.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/wyoming.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/willie.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/specialolympics.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/peaberry.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/metrodenver.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/cessna.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/pages/bellco.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/controllers/secret_constroller.rb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/assets/images/btn_email.png",
+		"/Users/mwilson/Documents/Repo/pure-site/app/assets/stylesheets/application.scss",
+		"/Users/mwilson/Documents/Repo/pure-site/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/Users/mwilson/Documents/Repo/pure-site/app/views/layouts/application.html.erb",
+		"/Users/mwilson/Documents/Repo/pure-site/app/assets/javascripts/application.js",
+		"/Users/mwilson/Documents/Repo/pure-site/.gitignore",
+		"/Users/mwilson/Documents/Repo/ncm_timeline/app/views/pages/index.html.erb",
+		"/Users/mwilson/Documents/Repo/ncm_timeline/ncm_timeline.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".logo",
+			".photo",
+			".mark",
+			"../images/",
+			"../fonts/",
+			"../../_images/",
+			"/payments_assets/javascript/jquery/jquery.colorbox/images",
+			"/payments_assets/images/",
+			"url(images/",
+			"url(../_images/",
+			"url(\"../_images/",
+			"url(../_images/",
+			"url(\"payments_assets",
+			"url(../_images/",
+			"url(\"../_images",
+			"#PaymentsVideoFrame",
+			"href=\"http://payments.westernunion.com",
+			"src=\"",
+			"assets/",
+			"url('",
+			"<img src=\"",
+			"img",
+			"#footer",
+			".footer",
+			".close",
+			"#ribbon",
+			".screen.intro",
+			".column_one",
+			".loader",
+			".column",
+			"console",
+			"initInterface",
+			".fancybox-close",
+			".fancy",
+			"toString",
+			"$maxWidth",
+			".fancy"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/assets/images/",
+			"/assets/fonts/",
+			"/payments_assets/images/",
+			"/payments_assets/javascript/jquery/jquery.colorbox/images/",
+			"/payments_assets/javascript/jquery/jquery.colorbox/images",
+			"url(/payments_assets/images/",
+			"url(\"/payments_assets/images/",
+			"url(/payments_assets/images/",
+			"url(\"/payments_assets",
+			"url(/payments_assets/images/",
+			"url(\"payments_assets/images",
+			"href=\"",
+			"src=\"/",
+			"payments_assets/",
+			"url('../images/",
+			"<img src=\"assets/images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 2124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 3132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								939,
+								939
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 2007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1698,
+								1698
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"in",
+				"app/views/pages/index.html.erb"
+			],
+			[
+				"pages",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"appl",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"index",
+				"app/views/pages/index.html.erb"
+			],
+			[
+				"page",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"about",
+				"app/views/pages/aboutus.html.erb"
+			],
+			[
+				"project",
+				"app/views/layouts/project.html.erb"
+			],
+			[
+				"projects",
+				"vendor/extensions/projects/app/controllers/refinery/projects/projects_controller.rb"
+			],
+			[
+				"show",
+				"vendor/extensions/projects/app/views/refinery/projects/projects/show.html.erb"
+			],
+			[
+				"pa",
+				"app/assets/javascripts/pages.js"
+			],
+			[
+				"blog",
+				"app/views/pages/blog.html.erb"
+			],
+			[
+				"apl",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"them",
+				"app/assets/stylesheets/theme.css.scss"
+			],
+			[
+				"articl",
+				"vendor/extensions/articles/app/controllers/refinery/articles/articles_controller.rb"
+			],
+			[
+				"",
+				"vendor/extensions/articles/app/views/refinery/articles/articles/show.html.erb"
+			],
+			[
+				"inde",
+				"app/views/pages/index.html.erb"
+			],
+			[
+				"proj",
+				"vendor/extensions/projects/app/controllers/refinery/projects/projects_controller.rb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"ind",
+				"app/views/pages/index.html.erb"
+			],
+			[
+				"dev",
+				"config/environments/development.rb"
+			],
+			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"a",
+				"app/views/layouts/application.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 531.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/mwilson/Documents/Repo/michaelthomaswilson/michaelthomaswilson.sublime-project"
+			]
+		],
+		"width": 693.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true
+}

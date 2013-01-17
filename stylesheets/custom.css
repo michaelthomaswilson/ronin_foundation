@@ -283,8 +283,8 @@ a:hover {
 }
 /* line 262, ../sass/custom.scss */
 #present .leftColumn, #present .rightColumn {
-  margin-top: 20%;
-  margin-bottom: 100px;
+  margin-top: 30%;
+  margin-bottom: 50px;
 }
 /* line 267, ../sass/custom.scss */
 #present a.photo {
@@ -334,5 +334,15 @@ a:hover {
   /* line 313, ../sass/custom.scss */
   #home .leftColumn, #home .rightColumn {
     margin-top: 30%;
+  }
+
+  /* line 320, ../sass/custom.scss */
+  #present .leftColumn, #present .rightColumn {
+    margin-top: 130px;
+    margin-bottom: 50px;
+  }
+  /* line 325, ../sass/custom.scss */
+  #present a.photo {
+    text-align: center;
   }
 }

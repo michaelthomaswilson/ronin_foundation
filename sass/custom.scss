@@ -260,8 +260,8 @@ a:hover {color: #fff;}
 	padding: 0;
 
 	.leftColumn, .rightColumn {
-		margin-top: 20%;
-		margin-bottom: 100px;
+		margin-top: 30%;
+		margin-bottom: 50px;
 	}
 
 	a.photo {
@@ -312,6 +312,18 @@ and (max-device-width : 1024px) {
 	#home{
 		.leftColumn, .rightColumn {
 			margin-top: 30%;
+		}
+	}
+
+	#present {
+
+		.leftColumn, .rightColumn {
+			margin-top: 130px;
+			margin-bottom: 50px;
+		}
+
+		a.photo {
+			text-align: center;
 		}
 	}
 
