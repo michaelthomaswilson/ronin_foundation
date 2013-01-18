@@ -26,43 +26,42 @@
 /*************************************************************************/
 /*   Page elements
 /*************************************************************************/
-/* line 45, ../sass/single_page.scss */
+/* line 48, ../sass/single_page.scss */
 html, body {
   height: 100%;
   text-align: left;
   font-family: "ZurichCondensedLight", Arial, Helvetica;
   font-size: 14px;
   font-weight: 300;
-  color: #fff;
+  color: #46494d;
   border: 0;
   margin: 0;
   padding: 0;
-  background: #070812 url("/assets/images/background-future-3.jpg") no-repeat fixed;
-  background-size: cover;
+  background: #fff;
 }
 
-/* line 60, ../sass/single_page.scss */
+/* line 64, ../sass/single_page.scss */
 h1 {
   font-family: "ZurichCondensed", Arial, Helvetica;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1em;
   letter-spacing: .05em;
   margin-top: 0;
   margin-bottom: 0.6em;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  color: #46494d;
 }
 
-/* line 75, ../sass/single_page.scss */
+/* line 79, ../sass/single_page.scss */
 h1 > span {
   font-family: "ZurichCondensedLight", Arial, Helvetica;
   font-weight: 300;
-  color: #70757c;
+  color: #74797f;
 }
 
-/* line 81, ../sass/single_page.scss */
+/* line 85, ../sass/single_page.scss */
 h2 {
   font-family: 'ZurichCondensed';
   font-weight: 500;
@@ -73,7 +72,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* line 91, ../sass/single_page.scss */
+/* line 95, ../sass/single_page.scss */
 h2 > span {
   display: inline-block;
   font-family: 'ZurichCondensedLight';
@@ -82,50 +81,52 @@ h2 > span {
   margin-left: 5px;
 }
 
-/* line 99, ../sass/single_page.scss */
+/* line 103, ../sass/single_page.scss */
 p {
   font-family: 'ZurichCondensedLight';
   font-size: 1.25em;
   line-height: 1.4em;
 }
 
-/* line 105, ../sass/single_page.scss */
+/* line 109, ../sass/single_page.scss */
 a, a:visited, a:active {
   color: #768794;
   text-decoration: none;
 }
 
-/* line 106, ../sass/single_page.scss */
+/* line 110, ../sass/single_page.scss */
 a:hover {
-  color: #fff;
+  color: #46494d;
 }
 
 /*************************************************************************/
 /*   Classes
 /*************************************************************************/
-/* line 113, ../sass/single_page.scss */
+/* line 118, ../sass/single_page.scss */
 a.photo {
   display: block;
-  padding: 5px;
-  border: 1px solid #73787f;
-  background: #000;
+  border: 1px solid white;
+  background: #fff;
   margin-bottom: 30px;
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 123, ../sass/single_page.scss */
+/* line 127, ../sass/single_page.scss */
 a.photo:hover {
   border: 1px solid #c51213;
 }
 
-/* line 128, ../sass/single_page.scss */
+/* line 132, ../sass/single_page.scss */
+.logo {
+  opacity: .4;
+  margin-top: 430px;
+}
+
+/* line 137, ../sass/single_page.scss */
 .mark {
   position: absolute;
   opacity: .1;
 }
 
-/* line 130, ../sass/single_page.scss */
+/* line 139, ../sass/single_page.scss */
 .selected {
   color: #c51213 !important;
 }
@@ -133,22 +134,14 @@ a.photo:hover {
 /*************************************************************************/
 /*   ID's
 /*************************************************************************/
-/* line 139, ../sass/single_page.scss */
+/* line 148, ../sass/single_page.scss */
 #future {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
   height: auto;
-  margin: 100px 0;
-}
-/* line 148, ../sass/single_page.scss */
-#future h1 {
-  color: #fff;
-}
-/* line 152, ../sass/single_page.scss */
-#future p {
-  color: #dbdae0;
+  margin: 0 0 50px 0;
 }
 
 /*************************************************************************/
@@ -156,36 +149,36 @@ a.photo:hover {
 /*************************************************************************/
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 175, ../sass/single_page.scss */
+  /* line 166, ../sass/single_page.scss */
   h1 {
     letter-spacing: .05em;
     margin-bottom: 10px;
   }
 
-  /* line 180, ../sass/single_page.scss */
+  /* line 171, ../sass/single_page.scss */
   h2 {
     font-size: 1.15em;
     line-height: 1em;
   }
 
-  /* line 185, ../sass/single_page.scss */
+  /* line 176, ../sass/single_page.scss */
   p {
     font-size: 1.3em;
     line-height: 1.5em;
   }
 
-  /* line 190, ../sass/single_page.scss */
+  /* line 181, ../sass/single_page.scss */
   #future {
     height: auto;
   }
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 201, ../sass/single_page.scss */
+  /* line 192, ../sass/single_page.scss */
   #future {
     height: auto;
   }
-  /* line 204, ../sass/single_page.scss */
+  /* line 195, ../sass/single_page.scss */
   #future .logo {
     position: relative;
     top: auto;
